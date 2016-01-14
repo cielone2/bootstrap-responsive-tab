@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <nav class="navbar navbar-default">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Responsive Tab</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="container">
+ <div class="col-xs-12">
+   <div>
+
+  <!-- Nav tabs -->
+  <ul id="responsivetab" class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+    <li role="presentation"><a href="#Lorem" aria-controls="Lorem" role="tab" data-toggle="tab">Lorem</a></li>
+    <li role="presentation"><a href="#ipsum" aria-controlsLorem="ipsum" role="tab" data-toggle="tab">ipsum</a></li>
+    <li role="presentation"><a href="#dolor" aria-controls="dolor" role="tab" data-toggle="tab">dolor</a></li>
+    <li role="presentation"><a href="#sit" aria-controls="sit" role="tab" data-toggle="tab">sit</a></li>
+    <li role="presentation"><a href="#amet" aria-controls="amet" role="tab" data-toggle="tab">amet</a></li>
+    <li role="presentation"><a href="#consectetur" aria-controls="consectetur" role="tab" data-toggle="tab">consectetur</a></li>
+    <li role="presentation"><a href="#adipisicing" aria-controls="adipisicing" role="tab" data-toggle="tab">adipisicing</a></li>
+    <li role="presentation"><a href="#elit" aria-controls="elit" role="tab" data-toggle="tab">elit</a></li>
+    <li role="presentation"><a href="#Recusandae" aria-controls="Recusandae" role="tab" data-toggle="tab">Recusandae</a></li>
+    <li role="presentation"><a href="#adipisci" aria-controls="adipisci" role="tab" data-toggle="tab">adipisci</a></li>
+    <li role="presentation"><a href="#odit" aria-controls="odit" role="tab" data-toggle="tab">odit</a></li>
+    <li role="presentation"><a href="#in" aria-controls="in" role="tab" data-toggle="tab">in</a></li>
+    <li role="presentation"><a href="#officia" aria-controls="officia" role="tab" data-toggle="tab">officia</a></li>
+    <li role="presentation"><a href="#labore" aria-controls="labore" role="tab" data-toggle="tab">labore</a></li>
+    <li role="presentation"><a href="#nostrum" aria-controls="nostrum" role="tab" data-toggle="tab">nostrum</a></li>
+    <li role="presentation"><a href="#aperiam" aria-controls="aperiam" role="tab" data-toggle="tab">aperiam</a></li>
+
+
+
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">1</div>
+    <div role="tabpanel" class="tab-pane" id="Lorem">2</div>
+    <div role="tabpanel" class="tab-pane" id="ipsum">3</div>
+    <div role="tabpanel" class="tab-pane" id="dolor">4</div>
+    <div role="tabpanel" class="tab-pane" id="sit">5</div>
+    <div role="tabpanel" class="tab-pane" id="amet">6</div>
+    <div role="tabpanel" class="tab-pane" id="consectetur">7</div>
+    <div role="tabpanel" class="tab-pane" id="adipisicing">8</div>
+    <div role="tabpanel" class="tab-pane" id="elit">9</div>
+    <div role="tabpanel" class="tab-pane" id="Recusandae">10</div>
+    <div role="tabpanel" class="tab-pane" id="adipisci">11</div>
+    <div role="tabpanel" class="tab-pane" id="odit">12</div>
+    <div role="tabpanel" class="tab-pane" id="in">13</div>
+    <div role="tabpanel" class="tab-pane" id="officia">14</div>
+    <div role="tabpanel" class="tab-pane" id="labore">15</div>
+    <div role="tabpanel" class="tab-pane" id="nostrum">16</div>
+    <div role="tabpanel" class="tab-pane" id="aperiam">17</div>
+  </div>
+</div>
+
+
+   <div class="col-xs-12"> <hr>
+     <div class="panel panel-default">
+       <div class="panel-heading">Usage</div>
+       <div class="panel-body">
+         #responsivtab is your ul id
+         <div class="well well-lg">
+           <code>
+           $(function () {<br>
+           $('#responsivetab').responsivetab({<br>
+           text: 'Other',<br>
+           });<br>
+           })
+           </code>
+         </div>
+           if you want real time responsive you can use this code
+         <div class="well well-lg">
+           <code>
+             $(window).on('resize', function() {<br>
+             $('#responsivetab').responsivetab({<br>
+             text: 'Other',<br>
+             });<br>
+             });<br>
+           </code>
+           </div>
+
+       </div>
+     </div>
+   </div>
+ </div>
+
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/responsivetab.js"></script>
+
+    <script>
+      $(function () {
+        $('#responsivetab').responsivetab({
+          text: 'Other',
+        });
+      })
+
+      $(window).on('resize', function() {
+        $('#responsivetab').responsivetab({
+          text: 'Other',
+        });
+      });
+  </script
+  </body>
+</html>
