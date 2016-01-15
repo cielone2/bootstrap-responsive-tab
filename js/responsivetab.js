@@ -14,7 +14,7 @@
 		})
 		$(id).empty();
 		$(id).html(ea);
-		console.log(ea);
+		
 
 	}
 
